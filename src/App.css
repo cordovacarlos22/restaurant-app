@@ -5,10 +5,14 @@
 }
 
 .App{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   color: white;
   background-image: url('./assets/bg.png');
   width: 100vw;
   height: 100vh;
-  
 }
+
+
 

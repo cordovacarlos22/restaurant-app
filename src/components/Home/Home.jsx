@@ -8,11 +8,11 @@ import Gallery from '../Gallery/Gallery';
 import ContactUs from "../ContactUs/ContactUs";
 import Aboutus from '../AboutUs/AboutUs';
 import Footer from '../Footer/Footer';
-
+import Navbar from "../Navbar/Navbar";
  const Home = () =>{
   return(
     <div className="body">
-    
+      <Navbar/>
       <main>
       
         <header className="header-container">
