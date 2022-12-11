@@ -5,16 +5,21 @@ import Home  from "../Home/Home";
 import Menuitem from '../Menuitem/MenuItem'
 import BookTable from '../Booking/BookTable'
 import ContactUs from '../ContactUs/ContactUs';
-
+import gericht from '/Users/carloscordova/Desktop/restaurant-app/src/assets/gericht.png'
 const Navbar = () => (
-  <div className='navbar-container'>
+  <div className='nav-main-container'>
+    <div className='navbar-container'>
+    <img 
+    className='navlogo'
+    src={gericht}  
+    alt='logo'></img>
     <div className="navbar">
         <Link to="/">Home</Link>
         <Link to="/Menu">Menu</Link>
         <Link to="/contact">Contact Us</Link>
         <Link to="/booktable">Book Table</Link>
       </div>
-      <div className="Body">
+      <div className="links-container">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Menu" element={<Menuitem />} />
@@ -22,6 +27,7 @@ const Navbar = () => (
           <Route path="/booktable" element={<BookTable />} />
         </Routes>
       </div>
+  </div>
   </div>
 );
 
