@@ -7,7 +7,7 @@
 .App{
   color: white;
   background-image: url('./assets/bg.png');
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   
 }

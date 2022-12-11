@@ -1,5 +1,6 @@
 import React from "react";
 import './Home.css';
+
 import Header from '../Header/Header';
 import Intro from '../Intro/Intro';
 import Chef from '../Chef/Chef';
@@ -10,9 +11,12 @@ import Footer from '../Footer/Footer';
 
  const Home = () =>{
   return(
-    <body className="body">
+    <div className="body">
+    
       <main>
+      
         <header className="header-container">
+
           <Header/>
       </header>
       <article className="intro">
@@ -34,7 +38,7 @@ import Footer from '../Footer/Footer';
         <Footer />
       </footer>  
       </main>         
-    </body>
+    </div>
   );
 }
 
