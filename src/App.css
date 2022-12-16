@@ -9,10 +9,14 @@
   flex-wrap: wrap;
   flex-direction: column;
   color: white;
-  background-image: url('./assets/bg.png');
+  background-color: black;
   width: 100vw;
   height: 100vh;
+  background-image: url('./assets//overlaybg.png') ;
+  background-size: cover;
 }
+
+
 
 
 

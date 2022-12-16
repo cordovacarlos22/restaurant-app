@@ -1,5 +1,7 @@
-
-
+.nav-main-container{
+  z-index: 2;
+  position: relative;
+}
 .navbar-toggler-icon{
   display: flex;
   background-color: white;
@@ -10,7 +12,7 @@
 #nav-link {
   color:white;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 0.8em;
 }
 
 #nav-link:hover{

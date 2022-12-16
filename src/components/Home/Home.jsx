@@ -2,44 +2,57 @@ import React from "react";
 import './Home.css';
 
 import Header from '../Header/Header';
-import Intro from '../Intro/Intro';
 import Chef from '../Chef/Chef';
 import Gallery from '../Gallery/Gallery';
 import ContactUs from "../ContactUs/ContactUs";
 import Aboutus from '../AboutUs/AboutUs';
 import Footer from '../Footer/Footer';
-import Navbars from "../Navbar/Navbar";
-
+import Menu from '/Users/carloscordova/Desktop/restaurant-app/src/components/Menu/SpecialMenu.jsx'
+import Video from "../video/Video";
+import Laurels from "../Laurels/Laurels";
+import FindUs from "../Findus/FindUs";
  const Home = () =>{
-  return(
+  return (
     <div className="body">
-      <Navbars/>
-      
       <main>
-      
         <header className="header-container">
+          <Header />
+        </header>
 
-          <Header/>
-      </header>
-      <article className="intro">
-          <Intro />
-       </article>
-      <section>
-        <Chef />
-      </section>
-      <figure className="gallery-container">
-         <Gallery />
-      </figure>
-      <aside className="constacus-container">
-        <ContactUs />
-      </aside>
-      <aside className="aboutus-container">
-        <Aboutus />
-      </aside>
-      <footer className="footer">
-        <Footer />
-      </footer>  
-      </main>         
+        <aside className="aboutus-container">
+          <Aboutus />
+        </aside>
+          
+        <div className="menu-container" >
+          <Menu/>
+        </div>
+
+        <section className="chef-container">
+          <Chef />
+        </section>
+
+        <div className="video-container">
+          <Video/>
+        </div>
+
+        <div className="container-lauerels">
+          <Laurels/>
+        </div>
+        <figure className="gallery-container">
+          <Gallery />
+        </figure>
+
+        <div>
+          <FindUs />
+        </div>
+        <aside className="constacus-container">
+          <ContactUs />
+        </aside>
+
+        <footer className="footer">
+          <Footer />
+        </footer>
+      </main>
     </div>
   );
 }

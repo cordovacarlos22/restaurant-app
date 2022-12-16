@@ -1,17 +1,19 @@
 import React  from 'react';
 import './App.css';
 import Home from './components/Home/Home';
-import {Route,BrowserRouter,Routes,} from "react-router-dom";
+import {Route,Routes,BrowserRouter} from "react-router-dom";
 import Menuitem from "./components/Menuitem/MenuItem";
 import BookTable from "./components/Booking/BookTable";
 import Aboutus from "./components/AboutUs/AboutUs";
 import ContactUs from './components/ContactUs/ContactUs';
+import Navbars from "/Users/carloscordova/Desktop/restaurant-app/src/components/Navbar/Navbar.jsx";
 function App() {
 
   return (
     <div className="App">
       <div className="links-container">
         <BrowserRouter>
+          <Navbars></Navbars>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/menu" element={<Menuitem />} />
