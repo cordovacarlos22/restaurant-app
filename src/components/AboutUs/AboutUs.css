@@ -9,10 +9,17 @@
   background-size: 20%;
   background-repeat: no-repeat;
   height: 100vh;
-  width: 100vw;
   gap: 40px;
 }
+.about-us-container,
+.knife-main-container,
+.our-history-container{
+  text-align: center;
+  width: auto;
+  flex: 1 1;
+flex-wrap: wrap;
 
+}
 .about-us-knife {
   width: 75px;
   height: 600px;
@@ -32,4 +39,78 @@
 
 .our-history-spoon {
   float: left;
+}
+
+
+/* MediasQueries */
+/*======================================== */
+
+/* Extra small devices (phones, 600px and less) */
+
+
+@media only screen and (max-width: 600px) {
+   .aboutusmain-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  text-align: center;
+  background-position: center;
+  background-size:20%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  gap: 20px;
+}
+
+.about-us-knife {
+  width: 25px;
+  height: 300px;
+}
+
+.about-us-title,
+.our-history-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #dcca87;
+}
+
+}
+
+/* Small devices (vertical tablets and large phones, 317pxpx and up) */
+@media only screen and (min-width: 317px) {
+    
+
+}
+
+/* Small devices (vertical tablets and large phones, 600px and up) */
+@media only screen and (min-width: 590px) {
+
+  
+}
+
+
+
+/* Medium devices (horizontal tablets, 768px and above) */
+@media only screen and (min-width: 768px) {
+
+   
+
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+   
+
+}
+
+
+
+/* Extra large devices (Large laptops and desktops, 1200px and above) */
+@media only screen and (min-width: 1000px) {
+    
+
+
 }
