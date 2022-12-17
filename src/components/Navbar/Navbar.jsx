@@ -32,7 +32,7 @@ function Navbars() {
                 {" "}
                 Contact us
               </Nav.Link>
-
+              
               <Nav.Link id="nav-link" as={Link} to="/booktable">
                 {" "}
                 Book Table

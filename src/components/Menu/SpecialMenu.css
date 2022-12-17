@@ -1,0 +1,131 @@
+.special-menu-main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+
+}
+
+.specia-menu-title-container{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.special-menu-spoon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 100%; 
+}
+
+.specia-menu-title{
+  color: #dcca87;
+  font-size: 5em;
+  font-weight: bold;
+
+}
+
+.menu-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-img{
+  width: 50%;
+}
+
+
+/* Extra small devices (phones, 600px and less) */
+
+
+@media only screen and (max-width: 600px) {
+   
+
+.special-menu-spoon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15px;
+  width: 100%; 
+}
+
+.specia-menu-title{
+  color: #dcca87;
+  font-size: 1em;
+  font-weight: bold;
+
+}
+
+.menu-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-img{
+  display: none;
+}
+}
+
+.menu-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.beer-wine-container{
+  height: 575px;
+  width: 50%;
+}
+
+.cocktails-container{
+  height:575px;
+  width: 50%;
+}
+
+
+
+/* Small devices (vertical tablets and large phones, 317pxpx and up) */
+@media only screen and (min-width: 317px) {
+    
+
+}
+
+/* Small devices (vertical tablets and large phones, 600px and up) */
+@media only screen and (min-width: 590px) {
+
+  
+}
+
+
+
+/* Medium devices (horizontal tablets, 768px and above) */
+@media only screen and (min-width: 768px) {
+
+   
+
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+   
+
+}
+
+
+
+/* Extra large devices (Large laptops and desktops, 1200px and above) */
+@media only screen and (min-width: 1000px) {
+    
+
+
+}
