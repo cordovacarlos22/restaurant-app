@@ -1,3 +1,91 @@
-.header-container{
+.header-main-container{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
   
+}
+
+.header-container{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  
+}
+
+.header-paragraph{
+  font-size: 16px;
+}
+
+
+.header-span-img{
+  width: 50px;
+  height: 50px;
+  
+}
+
+.header-title{
+  font-size: 90px;
+  font-weight: bold;
+  color: #DCCA87;
+  
+}
+
+.header-img{
+  width: 500px;
+  height: 500px;
+  margin-top: 5px;
+}
+
+
+#header-button{
+border: none;
+background-color: #DCCA87;
+border-radius: 5px;
+font-size: 20px;
+padding: 5px;
+margin: 10px;
+}
+
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+
+  .header-main-container {
+      margin-top: 10px;
+      padding-top: 5px;
+  
+    }
+
+  .header-title {
+      font-size: 50px;
+      font-weight: bold;
+      color: #DCCA87;
+  
+    }
+
+.header-img {
+    width: 400px;
+    height: 400px;
+    margin-top: 5px;
+  }
+}
+
+/* On screens that are 600px or less,  */
+@media screen and (max-width: 600px) {
+
+  .header-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: #DCCA87;
+  
+    }
+.header-img {
+    width: 200px;
+    height: 200px;
+    margin-top: 5px;
+  }
 }
