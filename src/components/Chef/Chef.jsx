@@ -15,7 +15,7 @@ const Chef = () => (
       <h4>Chef's World</h4>
       <img className='chef-spoon' src={Spoon} alt='spoon'></img>
       <h1 className='chef-title'>What We Belive In</h1>
-      <p className='chef-paragraph'><img src={Quote} alt='quote'></img>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet excepturi aliquam voluptatibus, inventore cumque repudiandae veritatis, omnis suscipit maiores molestias expedita alias consectetur ipsam libero voluptate nobis sint nihil error!</p> <br/>
+      <p className='chef-paragraph'><img className='quotes' src={Quote} alt='quote'></img>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet excepturi aliquam voluptatibus, inventore cumque repudiandae veritatis, omnis suscipit maiores molestias expedita alias consectetur ipsam libero voluptate nobis sint nihil error!</p> <br/>
       <h5 className='chef-name'>Kevin Lou</h5>
       <span className='chef-span'>Chef and Cofounder</span> <br/>
       <img className='sign-img' src={Sign} alt='chef-signature'></img>
