@@ -1,0 +1,19 @@
+.chef-main-container{
+  gap :100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  
+}
+
+.chef-img{
+  width:400px; 
+}
+
+.chef-title{
+  font-weight: bold;
+  font-size: 90px;
+  color: #dcca87;
+}

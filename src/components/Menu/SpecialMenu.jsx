@@ -33,11 +33,7 @@ const  SpecialMenu = () => {
       price: "$26",
       tags: "IE | 750 ml",
     },
-    {
-      title: "Flaming Dr.Pepper",
-      price: "$30",
-      tags: "CA | 750 ml",
-    },
+    
   ]);
 
 
