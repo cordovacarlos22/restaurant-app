@@ -2,9 +2,9 @@ import React from 'react';
 
 import './Gallery.css';
 
-const Gallery = () => (
-  <div>
-    Gallery
+const Gallery = (props) => (
+  <div className='gallery-main-container'>
+    <img src={props.gallery} alt='gallery'></img>
   </div>
 );
 

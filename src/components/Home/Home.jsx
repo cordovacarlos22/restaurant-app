@@ -17,7 +17,7 @@ import FindUs from "../Findus/FindUs";
     <div className="body">
       <main>
         <header className="header-container">
-          <Header/>
+          <Header />
         </header>
 
         <aside className="aboutus-container">
@@ -30,6 +30,10 @@ import FindUs from "../Findus/FindUs";
 
         <div className="chef-container">
           <Chef />
+        </div>
+
+        <div className="video-container">
+          <Video></Video>
         </div>
 
         <div className="container-lauerels">
