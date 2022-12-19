@@ -1,10 +1,9 @@
 .nav-main-container{
   width: 100vw;
-  height: 110px;
   z-index: 4;
   padding: 5px;
-  /* position: fixed;
-  background-color: black; */
+  position: fixed;
+  background-color: black;
 }
 .navbar-toggler-icon{
   display: flex;
@@ -37,7 +36,6 @@
 
 .nav-main-container {
   width: 100vw;
-  height: 25px;
   z-index: 4;
   position: relative;
   padding: 5px;
@@ -46,7 +44,7 @@
 #nav-link {
   color: white;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 20px;
 
 }
 }
@@ -63,7 +61,6 @@
 
   .nav-main-container {
     width: 100vw;
-    height: 25px;
     z-index: 4;
     position: relative;
     padding: 5px;

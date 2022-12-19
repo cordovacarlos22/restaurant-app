@@ -5,12 +5,21 @@
   align-items: center;
   width:75%;
   height: 75%;
-  margin: 5px;
+  
   
 }
 
+
+
+.chef-spoon{
+  float: left;
+  width: 50px;
+}
+
+
 .about-chef{
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
@@ -59,8 +68,6 @@
   width: 120px;
 }
 
-.chef-spoon{
-  display: none;
-}
+
 
 }
