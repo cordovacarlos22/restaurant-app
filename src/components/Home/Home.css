@@ -21,4 +21,10 @@
   background-image: url('/Users/carloscordova/Desktop/restaurant-app/src/assets/bg.png') ;
 }
 
+.container-lauerels{
+  width: 100%;
+ 
+  display: flex;
+}
+
   

@@ -28,24 +28,22 @@ import FindUs from "../Findus/FindUs";
           <Menu />
         </div>
 
-        <section className="chef-container">
+        <div className="chef-container">
           <Chef />
-        </section>
-
-        <div className="video-container">
-          <Video />
         </div>
 
         <div className="container-lauerels">
           <Laurels />
         </div>
-        <figure className="gallery-container">
+
+        <div className="gallery-container">
           <Gallery />
-        </figure>
+        </div>
 
         <div>
           <FindUs />
         </div>
+
         <aside className="constacus-container">
           <ContactUs />
         </aside>
