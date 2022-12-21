@@ -1,0 +1,60 @@
+.laurel-main-container {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  background-image: url("/Users/carloscordova/Desktop/restaurant-app/src/assets/logo.png");
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  background-position: left 50px top 50px;
+}
+
+.laurels-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.laurels-title {
+  color: #dcca87;
+}
+
+.laurels-span {
+  font-size: 20px;
+}
+
+.laurels-spoon {
+  width: 50px;
+  height: 50px;
+}
+
+.awards-container {
+  width: 25%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 200px;
+  gap: 40px;
+}
+
+.awards-container-img {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.awards-img {
+  width: 500px;
+  height: 500px;
+}
+
+@media only screen and (max-width: 600px) {
+  .awards-container {
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

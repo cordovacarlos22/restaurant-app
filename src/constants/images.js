@@ -21,7 +21,7 @@ import sign from '../assets/sign.png';
 import quote from '../assets/quote.png';
 import gericht from '../assets/gericht.png';
 
-export default {
+export default  {
   bg,
   chef,
   G,
@@ -45,3 +45,4 @@ export default {
   quote,
   gericht,
 };
+ob

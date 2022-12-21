@@ -1,6 +1,5 @@
 import React from "react";
 import './Home.css';
-
 import Header from '../Header/Header';
 import Chef from '../Chef/Chef';
 import Gallery from '../Gallery/Gallery';
