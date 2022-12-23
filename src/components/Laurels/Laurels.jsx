@@ -15,25 +15,29 @@ const Laurels = () => {
     {
       title: "Big Gourmond",
       img: award02,
-      paragraph: "Lorem ipsum",
+      paragraph:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. ",
       key: 1,
     },
     {
       title: "Rising Start",
       img: award01,
-      paragraph: "Lorem ipsum",
+      paragraph:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. ",
       key: 2,
     },
     {
       title: "AA Hospitality",
       img: award05,
-      paragraph: "Lorem ipsum",
+      paragraph:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. ",
       key: 3,
     },
     {
       title: "Outstanding Chef",
       img: award03,
-      paragraph: "Lorem ipsum",
+      paragraph:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. ",
       key: 4,
     },
   ]);

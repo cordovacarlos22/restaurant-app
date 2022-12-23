@@ -68,3 +68,212 @@
 
 }
 
+
+
+/* MediasQueries */
+/*======================================== */
+
+/* Extra small devices (phones, 600px and less) */
+
+
+@media only screen and (max-width: 600px) 
+{
+
+  .laurel-main-container {
+  padding: 10px;
+  background-image: url("/Users/carloscordova/Desktop/restaurant-app/src/assets/logo.png");
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  background-position: left 25px top 25px;
+  
+}
+ .main-container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.laurels-title-container{
+  width: 100%;
+  display: flex;
+ 
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+ 
+
+}
+
+.laurels-spoon{
+  width: 50px;
+  height: 25px;
+}
+
+.awards-container{
+  width: 50%;
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ text-align: center;
+
+
+}
+
+.awards-container-img{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+
+.awards-img{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height:300px;
+  border-radius: 5px;
+
+
+}
+
+
+}
+  
+/* Small devices (vertical tablets and large phones, 317pxpx and up) */
+@media only screen and (min-width: 317px) {
+
+
+  
+.awards-img{
+width: 150px;
+height: 150px;
+
+
+}
+    
+
+}
+
+/* Small devices (vertical tablets and large phones, 600px and up) */
+@media only screen and (min-width: 590px) {
+  
+  .laurel-main-container {
+  padding: 10px;
+  background-image: url("/Users/carloscordova/Desktop/restaurant-app/src/assets/logo.png");
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  background-position: left 25px top 25px;
+  
+}
+ .main-container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.laurels-title-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+ 
+
+}
+
+.laurels-spoon{
+  width: 50px;
+  height: 25px;
+}
+
+.awards-container{
+  width: 50%;
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ text-align: center;
+
+  
+}
+
+.awards-container-img{
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+
+.awards-img{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height:200px;
+  border-radius: 5px;
+
+
+}
+  
+}
+
+
+
+/* Medium devices (horizontal tablets, 768px and above) */
+@media only screen and (min-width: 768px) {
+
+
+
+
+.awards-img{
+  
+  width: 400px;
+  height:400px;
+  border-radius: 5px;
+
+
+}
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  .awards-img{
+  
+  width: 400px;
+  height:400px;
+  border-radius: 5px;
+
+
+}
+
+  
+}
+
+
+
+/* Extra large devices (Large laptops and desktops, 1200px and above) */
+@media only screen and (min-width: 1000px) {
+    
+.awards-img{
+  
+  width: 600px;
+  height:600px;
+  border-radius: 5px;
+
+
+}
+
+
+}
+

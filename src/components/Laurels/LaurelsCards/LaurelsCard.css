@@ -1,15 +1,16 @@
-.laurels-card{
+.laurels-card {
   display: flex;
   flex-direction: column;
-  gap: px;
   margin: 10px;
   padding: auto;
   width: 300px;
-
-  
 }
 
-.laurel-img{
+.laurel-title{
+  color: #dcca87;
+}
+
+.laurel-img {
   width: 50px;
   height: 50px;
 }
@@ -19,64 +20,69 @@
 
 /* Extra small devices (phones, 600px and less) */
 
+@media only screen and (max-width: 600px) {
+  .laurels-card {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: auto;
+    width: 250px;
+  }
 
-@media only screen and (max-width: 600px) 
-{
-   .laurels-card{
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-  padding: auto;
-  width: 250px;
+  .laurel-img {
+    width: 35px;
+    height: 35px;
+  }
 
-  
+  .laurel-title {
+    font-size: 20px;
+  }
 }
 
-.laurel-img{
-  width: 50px;
-  height: 50px;
-}
-
-.laurel-title{
-  font-size: 15px;
-}
-
-}
-  
 /* Small devices (vertical tablets and large phones, 317pxpx and up) */
 @media only screen and (min-width: 317px) {
-    
-
+  
 }
 
 /* Small devices (vertical tablets and large phones, 600px and up) */
 @media only screen and (min-width: 590px) {
-
-  
 }
-
-
 
 /* Medium devices (horizontal tablets, 768px and above) */
 @media only screen and (min-width: 768px) {
 
-   
-
-
-
+   .laurel-title {
+    font-size: 30px;
+  }
+  .laurel-img {
+  width: 35px;
+  height: 35px;
+}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    
-
+    .laurel-img {
+  width: 50px;
+  height: 50px;
 }
 
+ .laurel-title {
+    font-size: 20px;
+  }
 
+ 
+}
 
 /* Extra large devices (Large laptops and desktops, 1200px and above) */
 @media only screen and (min-width: 1000px) {
-    
+    .laurel-img {
+  width: 50px;
+  height: 50px;
+}
 
-
+  .laurel-title {
+    font-size: 40px;
+  }
+  
 }
