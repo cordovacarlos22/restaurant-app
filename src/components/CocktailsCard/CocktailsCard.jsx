@@ -3,7 +3,7 @@ import './CocktailCard.css'
 
 const CocktailsCard = (props) => {
   return (
-    <div className="Product-Card-container">
+    <div className="Product-Card-container" key={props.key}>
       <p className="card-title">{props.title}</p>
       <p>{props.price}</p>
       <p>{props.tags}</p>

@@ -38,8 +38,18 @@
 }
 
 
-@media only screen and (max-width: 600px) {
-   
+
+
+
+
+/* MediasQueries */
+/*======================================== */
+
+/* Extra small devices (phones, 600px and less) */
+
+
+@media only screen and (max-width: 600px) 
+{
 .chef-main-container{
   gap :30px;
   display: flex;
@@ -68,6 +78,105 @@
   width: 120px;
 }
 
+}
+  
+/* Small devices (vertical tablets and large phones, 317pxpx and up) */
+@media only screen and (min-width: 317px) {
+    
 
+}
+
+/* Small devices (vertical tablets and large phones, 600px and up) */
+@media only screen and (min-width: 590px) {
+.sign-img{
+  width: 100px;
+}
+
+.chef-img{
+  width:150px; 
+  
+}
+
+.quotes{
+  width: 40px;
+}
+
+
+.chef-title{
+  font-weight: bold;
+  font-size: 30px;
+  color: #dcca87;
+}
+}
+
+
+
+/* Medium devices (horizontal tablets, 768px and above) */
+@media only screen and (min-width: 768px) {
+
+
+
+.sign-img{
+  width: 200px;
+}
+
+.chef-img{
+  width:150px; 
+}
+
+.chef-title{
+  font-weight: bold;
+  font-size: 50px;
+  color: #dcca87;
+}
+
+
+.quotes{
+  width: 50px;
+}
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  .sign-img{
+  width: 100px;
+}
+  
+.chef-img{
+  width:200px; 
+}
+
+.chef-title{
+  font-weight: bold;
+  font-size: 60px;
+  color: #dcca87;
+}
+
+.quotes{
+  width: 70px;
+}
+
+}
+
+
+
+/* Extra large devices (Large laptops and desktops, 1200px and above) */
+@media only screen and (min-width: 1000px) {
+    
+.sign-img{
+  width: 400px;
+}
+
+.chef-img{
+  width:300px; 
+}
+
+.chef-title{
+  font-weight: bold;
+  font-size: 90px;
+  color: #dcca87;
+}
 
 }

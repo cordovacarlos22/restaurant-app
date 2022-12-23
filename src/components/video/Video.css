@@ -6,8 +6,16 @@
 }
 
 
-@media only screen and (max-width: 600px) {
-.video-container{
+
+/* MediasQueries */
+/*======================================== */
+
+/* Extra small devices (phones, 600px and less) */
+
+
+@media only screen and (max-width: 600px) 
+{
+ .video-container{
   margin: 0;
   padding: 0;
   background-color: black;
@@ -15,5 +23,63 @@
   flex-direction: column;
   height: auto;
 }
+
+}
+  
+/* Small devices (vertical tablets and large phones, 317pxpx and up) */
+@media only screen and (min-width: 317px) {
+    
+
+}
+
+/* Small devices (vertical tablets and large phones, 600px and up) */
+@media only screen and (min-width: 590px) {
+  .video-container{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+  
+}
+
+
+
+/* Medium devices (horizontal tablets, 768px and above) */
+@media only screen and (min-width: 768px) {
+
+   .video-container{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .video-container{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+}
+
+
+
+/* Extra large devices (Large laptops and desktops, 1200px and above) */
+@media only screen and (min-width: 1000px) {
+    
+
 
 }

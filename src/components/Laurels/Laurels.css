@@ -1,60 +1,70 @@
 .laurel-main-container {
-  width: 100vw;
+  width: 100%;
+  height: 100vh;
   display: flex;
+  padding: 20px;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 35px;
   background-image: url("/Users/carloscordova/Desktop/restaurant-app/src/assets/logo.png");
   background-size: 100px 100px;
   background-repeat: no-repeat;
   background-position: left 50px top 50px;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.laurels-title-container {
+
+.main-container{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.laurels-title-container{
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 100vw;
+  text-align: center;
+ 
+
 }
 
-.laurels-title {
-  color: #dcca87;
-}
-
-.laurels-span {
-  font-size: 20px;
-}
-
-.laurels-spoon {
-  width: 50px;
+.laurels-spoon{
+  width: 100px;
   height: 50px;
 }
 
-.awards-container {
-  width: 25%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 200px 200px;
-  gap: 40px;
-}
-
-.awards-container-img {
-  display: flex;
-  justify-content: flex-end;
+.awards-container{
   width: 50%;
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+ align-items: center;
+ text-align: center;
+
+  
 }
 
-.awards-img {
-  width: 500px;
-  height: 500px;
+.awards-container-img{
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
-@media only screen and (max-width: 600px) {
-  .awards-container {
-    width: 25%;
-    display: flex;
-    flex-wrap: wrap;
-  }
+
+.awards-img{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height:500px;
+  border-radius: 5px;
+
+
 }
+
