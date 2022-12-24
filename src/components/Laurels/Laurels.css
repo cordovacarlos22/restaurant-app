@@ -172,6 +172,7 @@ height: 150px;
 }
  .main-container{
   display: flex;
+  flex: 1 1;
   justify-content: center;
   width: 100%;
   margin: 10px;

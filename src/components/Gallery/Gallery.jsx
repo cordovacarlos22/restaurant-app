@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
 
-import './Gallery.css';
 
-const Gallery = (props) => (
-  <div className='gallery-main-container'>
-    <img src={props.gallery} alt='gallery'></img>
-  </div>
-);
+ const Gallery = () =>{
+  return(
+    <div className="d-flex bg-black">
+      <h1>test</h1>
+    </div>
+  );
+}
 
 export default Gallery;

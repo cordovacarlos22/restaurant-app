@@ -2,7 +2,7 @@ import React from "react";
 import './Home.css';
 import Header from '../Header/Header';
 import Chef from '../Chef/Chef';
-import Gallery from '../Gallery/Gallery';
+import Gallery from "/Users/carloscordova/Desktop/restaurant-app/src/components/Gallery/Gallery.jsx";
 import ContactUs from "../ContactUs/ContactUs";
 import Aboutus from '../AboutUs/AboutUs';
 import Footer from '../Footer/Footer';

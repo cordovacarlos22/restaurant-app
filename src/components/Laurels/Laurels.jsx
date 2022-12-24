@@ -54,6 +54,7 @@ const Laurels = () => {
               awards.map((el) => {
                 return (
                   <LaurelsCard
+                    key={el.key}
                     img={el.img}
                     title={el.title}
                     paragraph={el.paragraph}

@@ -17,8 +17,7 @@ const Header = (props) => (
       </span>
 
       <Link id="button-link" as={Link} to="/menu">
-        
-        <button id='header-button' type="button" class="btn btn-light">
+        <button id="header-button" type="button" className="btn btn-light">
           Explore Menu
         </button>
       </Link>
