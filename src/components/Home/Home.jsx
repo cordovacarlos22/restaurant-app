@@ -43,11 +43,11 @@ import FindUs from "../Findus/FindUs";
           <Gallery />
         </div>
 
-        <div>
+        <div className="find-us-container">
           <FindUs />
         </div>
 
-        <aside className="constacus-container">
+        <aside className="constact-us-container">
           <ContactUs />
         </aside>
 

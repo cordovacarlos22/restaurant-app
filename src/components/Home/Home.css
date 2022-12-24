@@ -2,6 +2,7 @@
   width: 100vw;
   height: 100vh;
   background-color: black;
+  font-family: Lato,sans-serif;
 }
 
 .aboutus-container {
@@ -33,4 +34,10 @@
   width: 100%;
   height: 100vh;
   background:url('/Users/carloscordova/Desktop/restaurant-app/src/assets/bg.png'); 
+}
+
+.find-us-container{
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/Users/carloscordova/Desktop/restaurant-app/src/assets/bg.png');
 }
