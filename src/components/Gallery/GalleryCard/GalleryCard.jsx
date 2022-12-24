@@ -1,10 +1,10 @@
 import React from 'react';
 
-import './Gallery.css';
+import './GalleryCard.css';
 
 const GalleryCard = (props) => (
-  <div className='gallery-main-container'>
-    <img src={props.gallery} alt='gallery'></img>
+  <div className='gallery-card-main-container'>
+    <img className='gallery-img' src={props.gallery} alt='gallery'></img>
   </div>
 );
 

@@ -1,0 +1,14 @@
+.gallery-title-container{
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+
+.gallery-title-img{
+  width: 50px;
+}
+
+.gallery-main-container{
+  border-radius: 10px;
+}

@@ -2,5 +2,22 @@
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 ;
+  gap:10px;
+  margin: 10px;
+}
+
+.gallery-img{
+  border-radius: 10px;
+  width: 350px;
+  height: 350px;
+  filter: grayscale(1);
   
 }
+
+
+.gallery-img:hover{
+ filter: grayscale(0);
+}
+
