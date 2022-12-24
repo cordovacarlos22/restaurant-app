@@ -33,7 +33,7 @@ import gallery04 from "/Users/carloscordova/Desktop/restaurant-app/src/assets/ga
    ]);
 
   return (
-    <div className="d-flex bg-black justify-contect-spaceevenly ">
+    <div className="d-flex bg-black justify-contect-spaceevenly  align-items-center m-20px p-20px">
       <div className="gallery-title-container ">
         <span className="gallery-title-span">Instagram</span>
         <h1 className="gallery-title">Photo Gallery</h1>
@@ -46,16 +46,10 @@ import gallery04 from "/Users/carloscordova/Desktop/restaurant-app/src/assets/ga
         </p>
       </div>
       <div className="gallery-main-container">
-        {
-          gallerys && gallerys.map((el) =>{
-            return (
-             <GalleryCard 
-             gallery={el.img}
-             key={el.key}
-             />
-            )
-          })
-        }
+        {gallerys &&
+          gallerys.map((el) => {
+            return <GalleryCard gallery={el.img} key={el.key} />;
+          })}
       </div>
     </div>
   );

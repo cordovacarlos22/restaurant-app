@@ -1,8 +1,29 @@
+.gallery-main-container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 ;
+  gap:10px;
+  
+  justify-content: center;
+  align-items: center;
+}
+
 .gallery-title-container{
   display: flex;
   flex-direction: column;
-  width: 250px;
+  width: 225px;
+  margin:5px;
+  justify-items: center;
+  align-items: center;
 }
+
+.gallery-title{
+  color: #dcca87;
+}
+
+  
 
 
 .gallery-title-img{

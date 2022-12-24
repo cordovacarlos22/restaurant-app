@@ -5,7 +5,9 @@
   flex-wrap: wrap;
   flex: 1 1 ;
   gap:10px;
-  margin: 10px;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .gallery-img{
@@ -19,5 +21,87 @@
 
 .gallery-img:hover{
  filter: grayscale(0);
+}
+
+
+/* MediasQueries */
+/*======================================== */
+
+/* Extra small devices (phones, 600px and less) */
+
+
+@media only screen and (max-width: 600px) 
+{
+
+  .gallery-main-container{
+  
+  gap:5px;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+  .gallery-img{
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+  filter: grayscale(1);
+  
+}
+
+}
+  
+/* Small devices (vertical tablets and large phones, 317pxpx and up) */
+@media only screen and (min-width: 317px) {
+    
+
+}
+
+/* Small devices (vertical tablets and large phones, 600px and up) */
+@media only screen and (min-width: 590px) {
+
+    .gallery-img{
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  filter: grayscale(1);
+  
+}
+
+}
+
+
+
+/* Medium devices (horizontal tablets, 768px and above) */
+@media only screen and (min-width: 768px) {
+  .gallery-img{
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  filter: grayscale(1);
+  
+}
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .gallery-img{
+  border-radius: 10px;
+  width: 350px;
+  height: 350px;
+  filter: grayscale(1);
+  
+}
+
+}
+
+
+
+/* Extra large devices (Large laptops and desktops, 1200px and above) */
+@media only screen and (min-width: 1000px) {
+    
+
+
 }
 
