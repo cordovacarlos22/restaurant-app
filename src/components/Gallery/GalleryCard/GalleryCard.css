@@ -45,7 +45,7 @@
   border-radius: 10px;
   width: 150px;
   height: 150px;
-  filter: grayscale(1);
+  filter: grayscale(0);
   
 }
 
@@ -64,7 +64,7 @@
   border-radius: 10px;
   width: 200px;
   height: 200px;
-  filter: grayscale(1);
+  filter: grayscale(0);
   
 }
 
@@ -76,9 +76,9 @@
 @media only screen and (min-width: 768px) {
   .gallery-img{
   border-radius: 10px;
-  width: 300px;
-  height: 300px;
-  filter: grayscale(1);
+  width: 200px;
+  height: 200px;
+  filter: grayscale(0);
   
 }
 
@@ -88,8 +88,8 @@
 @media only screen and (min-width: 992px) {
   .gallery-img{
   border-radius: 10px;
-  width: 350px;
-  height: 350px;
+  width: 250px;
+  height: 250px;
   filter: grayscale(1);
   
 }

@@ -1,7 +1,6 @@
 .find-us-main-container{
   width: 100vw;
   height: 100vh;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -16,6 +15,7 @@
   margin: 10px;
   padding: 10px;
   width: 50%;
+  gap: 20px;
 }
 
 .find-us-spoon{
@@ -27,11 +27,87 @@
   color: #dcca87;
 }
 
-.find-us-img-container{
 
-  width: 50%px;
-}
 .find-us-img{
   width: 500px;
   height: 500px;
+}
+
+
+
+
+/* MediasQueries */
+/*======================================== */
+
+/* Extra small devices (phones, 600px and less) */
+
+
+@media only screen and (max-width: 684px) {
+
+
+.find-us-title-container{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  width: 50%;
+  gap: 10px;
+}
+
+.find-us-img{
+  width: 250px;
+  height: 250px;
+}
+}
+  
+/* Small devices (vertical tablets and large phones, 317pxpx and up) */
+@media only screen and (min-width: 317px) {
+    .find-us-map{
+      display: none;
+    }
+}
+
+/* Small devices (vertical tablets and large phones, 600px and up) */
+@media only screen and (min-width: 590px) {
+  .find-us-map{
+    display: flex;
+  }
+  
+}
+
+
+
+/* Medium devices (horizontal tablets, 768px and above) */
+@media only screen and (min-width: 700px) {
+
+
+.find-us-img{
+  width: 300px;
+  height: 300px;
+}
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  .find-us-img{
+  width: 350px;
+  height: 350px;
+}
+  
+}
+
+
+
+
+/* Extra large devices (Large laptops and desktops, 1200px and above) */
+@media only screen and (min-width: 1000px) {
+    
+.find-us-img{
+  width: 400px;
+  height: 400px;
+}
+
 }

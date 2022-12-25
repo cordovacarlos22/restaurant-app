@@ -13,8 +13,9 @@
 .gallery-title-container{
   display: flex;
   flex-direction: column;
-  width: 225px;
-  margin:5px;
+  width: 300px;
+  margin:30px;
+  gap: 10px;
   justify-items: center;
   align-items: center;
 }
