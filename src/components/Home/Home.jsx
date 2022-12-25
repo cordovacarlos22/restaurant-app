@@ -3,7 +3,7 @@ import './Home.css';
 import Header from '../Header/Header';
 import Chef from '../Chef/Chef';
 import Gallery from "/Users/carloscordova/Desktop/restaurant-app/src/components/Gallery/Gallery.jsx";
-import ContactUs from "../ContactUs/ContactUs";
+// import ContactUs from "../ContactUs/ContactUs";
 import Aboutus from '../AboutUs/AboutUs';
 import Footer from '../Footer/Footer';
 import Menu from '/Users/carloscordova/Desktop/restaurant-app/src/components/Menu/SpecialMenu.jsx'
@@ -47,11 +47,11 @@ import FindUs from "../Findus/FindUs";
           <FindUs />
         </div>
 
-        <aside className="constact-us-container">
+        {/* <aside className="constact-us-container">
           <ContactUs />
-        </aside>
+        </aside> */}
 
-        <footer className="footer">
+        <footer className="footer-container">
           <Footer />
         </footer>
       </main>

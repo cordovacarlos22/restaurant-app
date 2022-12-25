@@ -52,6 +52,7 @@
   width: 50%;
   display: flex;
   flex-wrap: wrap;
+  margin: 0 auto;
 
 }
 
