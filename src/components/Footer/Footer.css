@@ -35,6 +35,10 @@
 
 .btn-susbcribe:hover {
   background-color: aliceblue;
+  -webkit-transition: all 0.5s 0s ease;
+-moz-transition: all 0.5s 0s ease;
+-o-transition: all 0.5s 0s ease;
+transition: all 0.5s 0s ease;
 }
 
 .footer-container {
@@ -72,4 +76,12 @@
   justify-content: space-evenly;
   display: flex;
   gap: 20px;
+  cursor: pointer;
+}
+
+.footer-card2-social-media:hover{
+  fill: #dcca87;
+  
+
+
 }

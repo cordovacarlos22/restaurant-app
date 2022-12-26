@@ -28,9 +28,9 @@ function Navbars() {
                 {" "}
                 About Us
               </Nav.Link>
-              <Nav.Link id="nav-link" as={Link} to="/contactus">
+              <Nav.Link id="nav-link" as={Link} to="/findus">
                 {" "}
-                Contact us
+                Find Us
               </Nav.Link>
               
               <Nav.Link id="nav-link" as={Link} to="/booktable">

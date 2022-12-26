@@ -21,8 +21,8 @@ function Footer(){
     //!add to fire base
     // Add a new document with a generated id.
     const docRef = await addDoc(collection(db, "subscribeletter"), {
-      name: input,
-     
+      email: input,
+      
     });
     console.log("Document written with ID: ", docRef.id);
     setInput('');
@@ -90,14 +90,14 @@ function Footer(){
           </div>
         </div>
         <div className="footer-card-3">
-          <h3>Working Hours</h3>
-          <p className="footer-work-hours">Working Hours</p>
+          
+          <h3 className="footer-work-hours">Working Hours</h3>
           <span className="footer-week-schedule">
-            Mon-Fri:10:00 am - 02:00 pm
+            Mon-Fri : 10:00 am  - 10:00  pm
           </span>{" "}
           <br></br>
           <span className="footer-weekend-schedule">
-            Sat-Sun:10:00 am - 03:00 pm
+           Sat-Sun : 10:00 am - 10:00 pm
           </span>
         </div>
       </div>

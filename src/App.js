@@ -5,8 +5,9 @@ import {Route,Routes,BrowserRouter} from "react-router-dom";
 import Menuitem from "./components/Menuitem/MenuItem";
 import BookTable from "./components/Booking/BookTable";
 import Aboutus from "./components/AboutUs/AboutUs";
-import ContactUs from './components/ContactUs/ContactUs';
+// import ContactUs from './components/ContactUs/ContactUs';
 import Navbars from "/Users/carloscordova/Desktop/restaurant-app/src/components/Navbar/Navbar.jsx";
+import FindUs from './components/Findus/FindUs';
 function App() {
 
   return (
@@ -18,7 +19,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/menu" element={<Menuitem />} />
             <Route path="/aboutus" element={<Aboutus />} />
-            <Route path="/contactus" element={<ContactUs />} />
+            <Route path="/findus" element={<FindUs />} />
             <Route path="/booktable" element={<BookTable />} />
           </Routes>
         </BrowserRouter>

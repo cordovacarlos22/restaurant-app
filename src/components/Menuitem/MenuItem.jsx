@@ -3,7 +3,7 @@ import React from 'react';
 import './MenuItem.css';
 
 const MenuItem = () => (
-  <div>
+  <div className='main-menu-container'>
   <h1>menu</h1>
   </div>
 );
