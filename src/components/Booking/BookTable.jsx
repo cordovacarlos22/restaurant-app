@@ -1,50 +1,50 @@
-import './BookTable.css'
+import "./BookTable.css";
 import bgbooktable from "/Users/carloscordova/Desktop/restaurant-app/src/assets/bg-booktable.jpg";
-import {useState} from 'react';
+import { useState } from "react";
 import db from "/Users/carloscordova/Desktop/restaurant-app/src/assets/Firebase.js";
-import { collection, addDoc } from "firebase/firestore/lite"; 
-const BookTable = () =>{
- const [day, setDay] = useState("");
- const [name, setName] = useState("");
- const [hour, setHour] = useState("");
- const [reservation, setReservation] = useState("");
- const [phone, setPhone] = useState("");
+import { collection, addDoc } from "firebase/firestore/lite";
+const BookTable = () => {
+  const [day, setDay] = useState("");
+  const [name, setName] = useState("");
+  const [hour, setHour] = useState("");
+  const [reservation, setReservation] = useState("");
+  const [phone, setPhone] = useState("");
 
-
-const handleSubmit = async (e) => {
-  e.preventDefault();
-  
-  const docRef = await addDoc(collection(db, "booktable"), {
-    day: day,
-    name: name,
-    ReservationTime: hour,
-    totalGuess: reservation,
-    phoneNumber: phone,
-  })
-
-  
-  .then(() => {
-        setDay("");
-        setName("");
-        setHour("");
-        setReservation("");
-        setPhone("");
-        
-        alert("Your reservation has been submitted👍");
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    // does not let send form if not fill complete
+    if (
+      (hour === "") |
+      (name === "") |
+      (day === "") |
+      (reservation === "") |
+      (phone === "")
+    ) {
+      alert("MAKE SURE TO FILL FORM COMPLETE");
+      return;
+    } else {
+      const docRef = await addDoc(collection(db, "booktable"), {
+        day: day,
+        name: name,
+        ReservationTime: hour,
+        totalGuess: reservation,
+        phoneNumber: phone,
       })
-      .catch((error) => {
-        alert(error.message);
-        
-      });
-  console.log("Document written with ID: ", docRef.id);
-  
+        .then(() => {
+          setDay("");
+          setName("");
+          setHour("");
+          setReservation("");
+          setPhone("");
 
-};
-
-
-
-
-
+          alert("Your reservation has been submitted👍");
+        })
+        .catch((error) => {
+          alert(error.message);
+        });
+      console.log("Document written with ID: ", docRef.id);
+    }
+  };
 
   return (
     <div className="book-table-container banner">
@@ -123,6 +123,6 @@ const handleSubmit = async (e) => {
       </div>
     </div>
   );
-}
+};
 
 export default BookTable;

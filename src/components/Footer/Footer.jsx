@@ -1,35 +1,33 @@
-import React, { useState} from 'react';
+import React, { useState } from "react";
 import spoon from "/Users/carloscordova/Desktop/restaurant-app/src/assets/spoon.svg";
-import './Footer.css';
-import facebook from '/Users/carloscordova/Desktop/restaurant-app/src/assets/u_facebook-f.svg'
-import intagram from '/Users/carloscordova/Desktop/restaurant-app/src/assets/u_instagram.svg'
-import twitter from '/Users/carloscordova/Desktop/restaurant-app/src/assets/u_twitter-alt.svg'
+import "./Footer.css";
+import facebook from "/Users/carloscordova/Desktop/restaurant-app/src/assets/u_facebook-f.svg";
+import intagram from "/Users/carloscordova/Desktop/restaurant-app/src/assets/u_instagram.svg";
+import twitter from "/Users/carloscordova/Desktop/restaurant-app/src/assets/u_twitter-alt.svg";
 import db from "/Users/carloscordova/Desktop/restaurant-app/src/assets/Firebase.js";
-import { collection,addDoc } from "firebase/firestore/lite"; 
+import { collection, addDoc } from "firebase/firestore/lite";
 
-function Footer(){
-    const [input,setInput] = useState('');
+function Footer() {
+  const [input, setInput] = useState("");
 
- const handleInput = (e) =>{
+  const handleInput = (e) => {
     setInput(e.target.value);
- }
+  };
 
- const handleSubmit = async (e)=>{
-  e.preventDefault();
-  if(input){
-    console.log(input);
-    //!add to fire base
-    // Add a new document with a generated id.
-    const docRef = await addDoc(collection(db, "subscribeletter"), {
-      email: input,
-      
-    });
-    console.log("Document written with ID: ", docRef.id);
-    setInput('');
-    alert('susbcription sucessfull')
- }
-
-}
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (input) {
+      console.log(input);
+      //!add to fire base
+      // Add a new document with a generated id.
+      const docRef = await addDoc(collection(db, "subscribeletter"), {
+        email: input,
+      });
+      console.log("Document written with ID: ", docRef.id);
+      setInput("");
+      alert("susbcription sucessfull");
+    }
+  };
 
   return (
     <div className="footer-main-container">
@@ -90,14 +88,13 @@ function Footer(){
           </div>
         </div>
         <div className="footer-card-3">
-          
           <h3 className="footer-work-hours">Working Hours</h3>
           <span className="footer-week-schedule">
-            Mon-Fri : 10:00 am  - 10:00  pm
+            Mon-Fri : 10:00 am - 10:00 pm
           </span>{" "}
           <br></br>
           <span className="footer-weekend-schedule">
-           Sat-Sun : 10:00 am - 10:00 pm
+            Sat-Sun : 10:00 am - 10:00 pm
           </span>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./ContactUs.css";
-import db  from "/Users/carloscordova/Desktop/restaurant-app/src/assets/Firebase.js";
+import db from "/Users/carloscordova/Desktop/restaurant-app/src/assets/Firebase.js";
 import { collection, addDoc } from "firebase/firestore/lite";
 const Contact = () => {
   const [name, setName] = useState("");
@@ -13,23 +13,28 @@ const Contact = () => {
     e.preventDefault();
     setLoader(true);
 
-     await addDoc(collection(db, "contactUs"), {
+    if ((name === "") | (email === "") | (message === "")) {
+      alert("MAKE SURE TO FILL FORM COMPLETE");
+      return;
+    } else {
+      await addDoc(collection(db, "contactUs"), {
         name: name,
         email: email,
         message: message,
-  })
-      .then(() => {
-        setLoader(false);
-        alert("Your message has been submitted👍");
       })
-      .catch((error) => {
-        alert(error.message);
-        setLoader(false);
-      });
+        .then(() => {
+          setLoader(false);
+          alert("Your message has been submitted👍");
+        })
+        .catch((error) => {
+          alert(error.message);
+          setLoader(false);
+        });
 
-    setName("");
-    setEmail("");
-    setMessage("");
+      setName("");
+      setEmail("");
+      setMessage("");
+    }
   };
 
   return (
