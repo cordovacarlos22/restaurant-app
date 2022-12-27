@@ -2,7 +2,7 @@ import React  from 'react';
 import './App.css';
 import Home from './components/Home/Home';
 import {Route,Routes,BrowserRouter} from "react-router-dom";
-import Menuitem from "./components/Menuitem/MenuItem";
+import Menuitem from "/Users/carloscordova/Desktop/restaurant-app/src/components/Menu/SpecialMenu.jsx";
 import BookTable from "./components/Booking/BookTable";
 import Aboutus from "./components/AboutUs/AboutUs";
 import ContactUs from "/Users/carloscordova/Desktop/restaurant-app/src/components/ContactUs/ContactUs.jsx";
@@ -15,6 +15,8 @@ function App() {
       <div className="links-container">
         <BrowserRouter>
           <Navbars></Navbars>
+          
+          
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/menu" element={<Menuitem />} />

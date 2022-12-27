@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Header = (props) => (
   <div className="header-main-container">
+    
     <div className="header-container">
       <span>Chase The New Flavour</span>
       <img className="header-span-img" src={Spoon} alt="spoon"></img>

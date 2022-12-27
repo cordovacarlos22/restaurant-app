@@ -65,12 +65,11 @@ const  SpecialMenu = () => {
   //   },
   // ]);
 
-  // Get a list of cities from your database
   
 
    const [wines, setWines] = useState("");
 
-   // Get a list of wines from your database
+   //! Get a list of wines from your database
    async function getWines() {
      const winesCol = collection(db, "wines");
      const winesSnapshot = await getDocs(winesCol);
@@ -103,6 +102,10 @@ const  SpecialMenu = () => {
 
   return (
     <div className="special-menu-main-container">
+      <div className="gap"></div>
+      <div></div> <br></br>
+      <br></br>
+      <br></br>
       <div className="specia-menu-title-container">
         <span className="special-menu-span">Menu That Fist Your Palette</span>
         <img className="special-menu-spoon" src={Spoon} alt="spoon"></img>
@@ -112,11 +115,17 @@ const  SpecialMenu = () => {
           <div className="beer-wine-container">
             <h4>Beer & Wine</h4>
             <div>
-              { wines && wines.map((el) => {
-                return (
-                  <Card  key={el.key} title={el.title} price={el.price} tags={el.tags} />
-                );
-              })}
+              {wines &&
+                wines.map((el) => {
+                  return (
+                    <Card
+                      key={el.key}
+                      title={el.title}
+                      price={el.price}
+                      tags={el.tags}
+                    />
+                  );
+                })}
             </div>
           </div>
           <div className="menu-img-container">
@@ -125,11 +134,17 @@ const  SpecialMenu = () => {
           <div className="cocktails-container">
             <h4>Cocktails</h4>
             <div>
-              {cocktails && cocktails.map((el) => {
-                return (
-                  <Card key={el.key} title={el.title} price={el.price} tags={el.tags} />
-                );
-              })}
+              {cocktails &&
+                cocktails.map((el) => {
+                  return (
+                    <Card
+                      key={el.key}
+                      title={el.title}
+                      price={el.price}
+                      tags={el.tags}
+                    />
+                  );
+                })}
             </div>
           </div>
         </div>
