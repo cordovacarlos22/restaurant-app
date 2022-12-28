@@ -55,46 +55,44 @@ const Contact = () => {
   };
 
   return (
-    <form className="form" onSubmit={handleSubmit}>
-      <div className="gap"></div>
-      <div></div> <br></br>
-      <br></br>
-      <br></br>
-      <h1 className="contactus-title">Contact Us 🤳</h1>
-      <label>Name</label>
-      <input
-        placeholder="Name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-      <label>Email</label>
-      <input
-        type="email"
-        placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <label>Message</label>
-      <textarea
-        placeholder="Message"
-        value={message}
-        onChange={(e) => setMessage(e.target.value)}
-      ></textarea>
-      <button
-        className="btn  btn-secondary"
-        type="submit"
-        style={{ display: isShown ? "block" : "none" }}
-      >
-        Submit
-      </button>
-      <button
-        className="btn btn-danger"
-        type="submit"
-        style={{ display: isShown ? "none" : "block" }}
-      >
-        fill form please
-      </button>
-    </form>
+    <div className="form-main-container">
+      <form className="form" onSubmit={handleSubmit}>
+        <h1 className="contactus-title ">Contact Us 🤳</h1>
+        <label>Name</label>
+        <input
+          placeholder="Name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+        <label>Email</label>
+        <input
+          type="email"
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <label>Message</label>
+        <textarea
+          placeholder="Message"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+        ></textarea>
+        <button
+          className="btn btn-primary btn-lg"
+          type="submit"
+          style={{ display: isShown ? "block" : "none" }}
+        >
+          Submit
+        </button>
+        <button
+          className="btn btn-danger btn-lg"
+          type="submit"
+          style={{ display: isShown ? "none" : "block" }}
+        >
+          fill form please
+        </button>
+      </form>
+    </div>
   );
 };
 

@@ -140,13 +140,22 @@ const BookTable = () => {
                   value={reservation}
                   onChange={(e) => setReservation(e.target.value)}
                 />
-                <input
+                {/* <input
+                  className="book-table-btn"
                   style={{ display: isShown ? "block" : "none" }}
                   type="submit"
                   value="BOOK TABLE"
-                />
+                /> */}
+                <button
+                  className=" book-table-btn w-100"
+                  style={{ display: isShown ? "block" : "none" }}
+                  type="submit"
+                  value="BOOK TABLE"
+                >
+                  BOOK TABLE
+                </button>
                 <input
-                  className="fill-form-btn"
+                  className="fill-form-btn btn btn-danger btn-lg w-100"
                   style={{ display: isShown ? "none" : "block" }}
                   type="submit"
                   value="Fill Form Please"

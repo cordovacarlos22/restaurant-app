@@ -1,9 +1,10 @@
 .nav-main-container{
   width: 100vw;
   z-index: 10;
-  
   position: fixed;
+  justify-content: space-between;
   background-color: black;
+
 }
 .navbar-toggler-icon{
   display: flex;
@@ -22,6 +23,11 @@
 #nav-link:hover{
   color:#DCCA87;
   transition: -2px 2px ;
+}
+
+.navlogo{
+  width: 200px;
+  height: 75px;
 }
 
 

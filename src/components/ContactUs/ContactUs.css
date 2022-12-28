@@ -6,13 +6,28 @@ button {
   font-family: "Inter", sans-serif;
 }
 
-/* Contact.js */
-.form {
+.form-main-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   width: 100vw;
   height: 100vh;
+  
+ 
+}
+
+/* Contact.js */
+.form {
+  
   display: flex;
+  width: 50%;
+  height: 100vh;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding: auto;
+  gap:10px;
+
 }
 
 
@@ -60,18 +75,8 @@ textarea:focus {
  margin: 5px;
  padding: 5px;
 }
-.form > button {
-  padding: 20px;
-  border: none;
-  font-weight: 500;
-  font-size: 20px;
-  border-radius: 3px;
-  color: #fff;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-  margin-top: 10px;
-}
 
-.form > button:hover {
-  background-color: rgb(0, 0, 196);
-}
+
+
+
+
