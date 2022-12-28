@@ -1,6 +1,6 @@
-import React from 'react';
-import './AboutUs.css';
-import Knife from '/Users/carloscordova/Desktop/restaurant-app/src/assets/knife.png';
+import React from "react";
+import "./AboutUs.css";
+import Knife from "/Users/carloscordova/Desktop/restaurant-app/src/assets/knife.png";
 import Spoon from "/Users/carloscordova/Desktop/restaurant-app/src/assets/spoon.svg";
 const AboutUs = () => (
   <div className="aboutusmain-container">
