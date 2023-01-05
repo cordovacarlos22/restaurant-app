@@ -22,7 +22,7 @@ function App() {
             <Route path="/aboutus" element={<Aboutus />} />
             <Route path="/contactus" element={<ContactUs />} />
             <Route path="/booktable" element={<BookTable />} />
-            <Route path="/admin" element={<Admin />} />
+            <Route path="/dbadmin" element={<Admin />} />
           </Routes>
         </BrowserRouter>
       </div>

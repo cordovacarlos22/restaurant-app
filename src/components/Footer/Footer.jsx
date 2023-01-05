@@ -6,7 +6,7 @@ import intagram from "/Users/carloscordova/Desktop/restaurant-app/src/assets/u_i
 import twitter from "/Users/carloscordova/Desktop/restaurant-app/src/assets/u_twitter-alt.svg";
 import db from "/Users/carloscordova/Desktop/restaurant-app/src/assets/Firebase.js";
 import { collection, addDoc } from "firebase/firestore/lite";
-
+import { Link } from "react-router-dom";
 function Footer() {
   const [input, setInput] = useState("");
 
@@ -85,7 +85,11 @@ function Footer() {
               alt="instagram"
             ></img>
             <img className="footer-twitter" src={twitter} alt="twitter"></img>
+            <Link className=" btn btn-secondary" as={Link} to="/dbadmin" >Admin Screen </Link>
           </div>
+          
+            
+         
         </div>
         <div className="footer-card-3">
           <h3 className="footer-work-hours">Working Hours</h3>
