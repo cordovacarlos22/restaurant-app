@@ -7,6 +7,7 @@ import BookTable from "./components/Booking/BookTable";
 import Aboutus from "./components/AboutUs/AboutUs";
 import ContactUs from "/Users/carloscordova/Desktop/restaurant-app/src/components/ContactUs/ContactUs.jsx";
 import Navbars from "/Users/carloscordova/Desktop/restaurant-app/src/components/Navbar/Navbar.jsx";
+import Admin from '/Users/carloscordova/Desktop/restaurant-app/src/components/Admin/Admin.jsx'
 // import FindUs from './components/Findus/FindUs';
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/aboutus" element={<Aboutus />} />
             <Route path="/contactus" element={<ContactUs />} />
             <Route path="/booktable" element={<BookTable />} />
+            <Route path="/admin" element={<Admin />} />
           </Routes>
         </BrowserRouter>
       </div>

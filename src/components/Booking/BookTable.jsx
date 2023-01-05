@@ -10,7 +10,7 @@ const BookTable = () => {
   const [hour, setHour] = useState("");
   const [reservation, setReservation] = useState("");
   const [phone, setPhone] = useState("");
-
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     // does not let send form if not fill complete
